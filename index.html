@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="catalog.js" defer></script>
+    <script src="store.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -18,11 +20,12 @@
     <header class="site-header">
       <button class="icon-button menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span class="menu-lines"></span></button>
       <nav class="main-nav" aria-label="Navegação principal">
-        <a href="#novidades">Novidades</a>
-        <a href="#colecao">Camisetas</a>
-        <a href="#sobre">Nossa ideia</a>
+        <a href="colecao.html">Camisetas</a>
+        <a href="videos.html">Em movimento</a>
+        <a href="sobre.html">Nossa ideia</a>
+        <a href="duvidas.html">Dúvidas</a>
       </nav>
-      <a class="wordmark" href="#inicio" aria-label="Gengibre, início">GENGIBRE<span>®</span></a>
+      <a class="wordmark has-logo" href="index.html" aria-label="Gengibre, início"><span class="wordmark-crop"><img src="assets/gengibre-wordmark.jpeg" alt="GENGIBRE" /></span></a>
       <div class="header-actions">
         <button class="icon-button search-toggle" aria-label="Abrir busca"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg></button>
         <button class="bag-button" aria-label="Abrir sacola">Sacola <span class="bag-count">0</span></button>
@@ -33,7 +36,7 @@
       <label for="search-input">O que você está procurando?</label>
       <div class="search-field"><input id="search-input" type="search" placeholder="Busque por uma camiseta..." autocomplete="off" /><button class="search-close" aria-label="Fechar busca">Fechar</button></div>
     </div>
-    <div class="mobile-menu" aria-hidden="true"><a href="#novidades">Novidades</a><a href="#colecao">Camisetas</a><a href="#sobre">Nossa ideia</a></div>
+    <div class="mobile-menu" aria-hidden="true"><a href="colecao.html">Camisetas</a><a href="videos.html">Em movimento</a><a href="sobre.html">Nossa ideia</a><a href="duvidas.html">Dúvidas</a></div>
 
     <main id="inicio">
       <section class="hero" aria-labelledby="hero-title">
@@ -41,7 +44,7 @@
           <p class="eyebrow"><span class="eyebrow-line"></span> MENOS, MAS MELHOR</p>
           <h1 id="hero-title">O essencial<br />tem <em>presença.</em></h1>
           <p class="hero-description">Camisetas que fazem o simples parecer tudo. Modelos versáteis, paleta fácil e espaço para você ser você.</p>
-          <a class="button button-dark" href="#colecao">Descubra a coleção <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="colecao.html">Descubra a coleção <span aria-hidden="true">↗</span></a>
           <div class="hero-note"><span>01 / 03</span><span class="hero-note-line"></span><span>CAMISETAS PARA TODOS OS DIAS</span></div>
         </div>
         <div class="hero-image-wrap">
@@ -74,12 +77,22 @@
         <p class="preview-note">Modelos, cores e valores ilustrativos. A loja estará pronta para pedidos após a integração com a Nuvemshop.</p>
         <div class="product-grid" id="product-grid" aria-live="polite"></div>
         <p class="no-results" hidden>Nenhuma camiseta encontrada. Que tal tentar outra busca?</p>
-        <div class="collection-bottom"><span>FEITO PARA VESTIR, DE NOVO E DE NOVO.</span><a href="#sobre">Conheça nossa ideia <span aria-hidden="true">↗</span></a></div>
+        <div class="collection-bottom"><span>FEITO PARA VESTIR, DE NOVO E DE NOVO.</span><a href="sobre.html">Conheça nossa ideia <span aria-hidden="true">↗</span></a></div>
       </section>
 
       <section class="editorial" id="sobre">
         <div class="editorial-image"><img src="assets/tee-livre.jpg" alt="Modelo usando camiseta Gengibre verde-sálvia" loading="lazy" /><span class="image-vertical">UM JEITO MAIS LEVE DE VESTIR</span></div>
-        <div class="editorial-copy"><p class="eyebrow">UM POUCO MENOS. MUITO MAIS VOCÊ.</p><h2>Não precisa<br />de muito para<br /><em>ser muito.</em></h2><p>A gente acredita na roupa que não pede atenção — mas recebe. Naquela que veste sem pensar e fica na memória. Por isso, começamos pelo começo: a camiseta que é a sua cara.</p><a href="#colecao" class="text-link">Veja nossas camisetas <span aria-hidden="true">↗</span></a><span class="editorial-mark">G.</span></div>
+        <div class="editorial-copy"><p class="eyebrow">UM POUCO MENOS. MUITO MAIS VOCÊ.</p><h2>Não precisa<br />de muito para<br /><em>ser muito.</em></h2><p>A gente acredita na roupa que não pede atenção — mas recebe. Naquela que veste sem pensar e fica na memória. Por isso, começamos pelo começo: a camiseta que é a sua cara.</p><a href="sobre.html" class="text-link">Conheça a Gengibre <span aria-hidden="true">↗</span></a><span class="editorial-mark">G.</span></div>
+      </section>
+
+      <section class="video-feature section-shell">
+        <div class="section-heading"><div><p class="eyebrow">VESTIR, VIVER, REPETIR</p><h2>Em movimento.</h2></div><p>Inspiração de estilo em vídeo.<br />Conteúdos demonstrativos, sem depoimentos.</p></div>
+        <div class="video-teaser-grid">
+          <a class="video-teaser" href="videos.html"><video muted autoplay loop playsinline preload="none" poster="https://images.pexels.com/videos/7316379/pexels-photo-7316379.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=630"><source src="https://videos.pexels.com/video-files/7316379/7316379-hd_1080_1920_25fps.mp4" type="video/mp4" /></video><span>Um básico, do seu jeito <b>↗</b></span></a>
+          <a class="video-teaser" href="videos.html"><video muted autoplay loop playsinline preload="none" poster="https://images.pexels.com/videos/7317021/adult-art-beach-beautiful-7317021.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=630"><source src="https://videos.pexels.com/video-files/7317021/7317021-hd_720_1280_50fps.mp4" type="video/mp4" /></video><span>Leve para a vida real <b>↗</b></span></a>
+          <a class="video-teaser" href="videos.html"><video muted autoplay loop playsinline preload="none" poster="https://images.pexels.com/videos/7317438/pexels-photo-7317438.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=630"><source src="https://videos.pexels.com/video-files/7317438/7317438-hd_1080_1920_25fps.mp4" type="video/mp4" /></video><span>Camadas de simplicidade <b>↗</b></span></a>
+        </div>
+        <p class="video-disclaimer">Vídeos demonstrativos de <a href="https://www.pexels.com/@angela-roma" target="_blank" rel="noreferrer">Angela Roma / Pexels</a>: <a href="https://www.pexels.com/video/woman-wearing-black-t-shirt-7316379/" target="_blank" rel="noreferrer">camiseta preta</a>, <a href="https://www.pexels.com/video/woman-holding-a-plain-shirt-7317021/" target="_blank" rel="noreferrer">camiseta lisa</a> e <a href="https://www.pexels.com/video/woman-wearing-a-plain-gray-shirt-7317438/" target="_blank" rel="noreferrer">camiseta cinza</a>. As pessoas nos vídeos não são clientes nem representam a GENGIBRE. <a href="videos.html">Saiba mais</a>.</p>
       </section>
 
       <section class="newsletter section-shell">
@@ -89,7 +102,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-main"><a class="wordmark footer-wordmark" href="#inicio">GENGIBRE<span>®</span></a><p>O essencial, do seu jeito.<br />Feito para acompanhar você.</p><div class="footer-links"><div><span>EXPLORE</span><a href="#colecao">Camisetas</a><a href="#sobre">Nossa ideia</a><a href="#novidades">Novidades</a></div><div><span>LOJA ONLINE</span><a href="#colecao">Catálogo ilustrativo</a><a href="#colecao">Pedidos em breve</a></div></div></div>
+      <div class="footer-main"><a class="wordmark footer-wordmark" href="index.html" aria-label="Gengibre, início"><span class="wordmark-crop"><img src="assets/gengibre-wordmark.jpeg" alt="GENGIBRE" /></span></a><span class="flower-mark"><img src="assets/gengibre-flower.jpeg" alt="Símbolo floral Gengibre" /></span><p>O essencial, do seu jeito.<br />Feito para acompanhar você.</p><div class="footer-links"><div><span>EXPLORE</span><a href="colecao.html">Camisetas</a><a href="sobre.html">Nossa ideia</a><a href="videos.html">Em movimento</a></div><div><span>LOJA ONLINE</span><a href="duvidas.html">Dúvidas</a><a href="colecao.html">Catálogo ilustrativo</a><a href="colecao.html">Pedidos em breve</a></div></div></div>
       <div class="footer-bottom"><span>© 2026 GENGIBRE. TODOS OS DIREITOS RESERVADOS.</span><span>FEITO COM CALMA, NO BRASIL <b>✳</b></span><a href="#inicio">VOLTAR AO TOPO ↑</a></div>
     </footer>
 
