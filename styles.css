@@ -296,12 +296,12 @@ h1 em, h2 em { color: var(--ginger); font-weight: 400; }
 }
 
 /* Multi-page storefront, brand marks, and video collection. */
-.wordmark.has-logo { display: block; width: 200px; height: 42px; overflow: hidden; }
+.wordmark.has-logo { display: block; width: 200px; height: 42px; overflow: hidden; background: #090908; }
 .wordmark-crop { position: relative; display: block; width: 100%; height: 100%; margin: 0; overflow: hidden; vertical-align: baseline; }
-.wordmark-crop img { position: absolute; width: 320px; height: 128px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); mix-blend-mode: screen; }
-.footer-wordmark { width: 200px; height: 42px; }
-.flower-mark { position: absolute; top: 59px; left: 0; width: 40px; height: 44px; overflow: hidden; }
-.flower-mark img { position: absolute; width: 110px; height: 44px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); mix-blend-mode: screen; }
+.wordmark-crop img { position: absolute; width: 320px; height: 128px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.footer-wordmark { width: 200px; height: 42px; background: #090908; }
+.flower-mark { position: absolute; top: 59px; left: 0; width: 40px; height: 44px; overflow: hidden; background: #090908; }
+.flower-mark img { position: absolute; width: 110px; height: 44px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .footer-main { position: relative; }
 
 .page-intro { padding-top: 28px; padding-bottom: 22px; }
