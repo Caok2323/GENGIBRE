@@ -8,7 +8,7 @@ Abra `index.html` no navegador. O catálogo, os filtros, a busca, a seleção de
 
 ## Antes de receber pedidos
 
-O catálogo de `script.js` é demonstrativo. Atualize os nomes, fotos, descrições, cores e valores do array `products` com os dados reais da coleção. As imagens atuais são referências editoriais remotas do Unsplash.
+O catálogo de `script.js` é demonstrativo. Atualize os nomes, fotos, descrições, cores e valores do array `products` com os dados reais da coleção. As fotos de campanha em `assets/` são imagens conceituais geradas para a prévia, não fotos dos produtos reais.
 
 A finalização está intencionalmente bloqueada. Quando a loja conectar à Nuvemshop, troque a ação `.checkout-button` em `script.js` pela integração de carrinho/checkout e remova o aviso de prévia em `index.html`. Defina também frete, políticas de troca, atendimento e formulário de novidades antes de abrir as vendas.
 

@@ -6,8 +6,8 @@ const products = [
     price: 129,
     category: "classica",
     label: "Essencial",
-    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=82",
-    alt: "Camiseta feminina de algodão em look casual",
+    image: "assets/tee-brisa.jpg",
+    alt: "Modelo usando camiseta marfim Gengibre",
     colors: [{ name: "Areia", hex: "#d4c6af" }, { name: "Folha", hex: "#777c68" }, { name: "Café", hex: "#67564a" }]
   },
   {
@@ -17,8 +17,8 @@ const products = [
     price: 149,
     category: "classica",
     label: "Essencial",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=82",
-    alt: "Camiseta branca de algodão em fotografia minimalista",
+    image: "assets/tee-forma.jpg",
+    alt: "Modelo usando camiseta marfim Gengibre",
     colors: [{ name: "Nuvem", hex: "#f1eee5" }, { name: "Oliva", hex: "#59624f" }, { name: "Marinho", hex: "#28343a" }]
   },
   {
@@ -28,8 +28,8 @@ const products = [
     price: 159,
     category: "classica",
     label: "Novo jeito",
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=82",
-    alt: "Look urbano feminino com camiseta de caimento solto",
+    image: "assets/tee-livre.jpg",
+    alt: "Modelo usando camiseta verde-sálvia Gengibre",
     colors: [{ name: "Telha", hex: "#ad674f" }, { name: "Baunilha", hex: "#e3ddcc" }, { name: "Preto", hex: "#262725" }]
   },
   {
@@ -39,8 +39,8 @@ const products = [
     price: 139,
     category: "textura",
     label: "Textura suave",
-    image: "https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=900&q=82",
-    alt: "Produção feminina atemporal em cores naturais",
+    image: "assets/tee-trama.jpg",
+    alt: "Modelo usando camiseta canelada marrom Gengibre",
     colors: [{ name: "Sálvia", hex: "#a6a78f" }, { name: "Creme", hex: "#e8dfcd" }, { name: "Cacau", hex: "#766054" }]
   }
 ];
