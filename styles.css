@@ -296,13 +296,11 @@ h1 em, h2 em { color: var(--ginger); font-weight: 400; }
 }
 
 /* Multi-page storefront, brand marks, and video collection. */
-.wordmark.has-logo { display: block; width: 200px; height: 42px; overflow: hidden; background: #090908; }
-.wordmark-crop { position: relative; display: block; width: 100%; height: 100%; margin: 0; overflow: hidden; vertical-align: baseline; }
-.wordmark-crop img { position: absolute; width: 320px; height: 128px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.footer-wordmark { width: 200px; height: 42px; background: #090908; }
-.flower-mark { position: absolute; top: 59px; left: 0; width: 40px; height: 44px; overflow: hidden; background: #090908; }
-.flower-mark img { position: absolute; width: 110px; height: 44px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.footer-main { position: relative; }
+.wordmark.has-logo, .footer-wordmark { display: flex; align-items: center; justify-self: center; gap: 4px; width: 207px; height: 42px; overflow: visible; background: transparent; }
+.brand-flower { display: block; flex: 0 0 36px; width: 36px; height: 36px; object-fit: contain; }
+.wordmark-crop { position: relative; display: block; flex: 0 0 167px; width: 167px; height: 42px; margin: 0; overflow: hidden; vertical-align: baseline; }
+.wordmark-crop img { position: absolute; width: 267px; height: 107px; max-width: none; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.footer-wordmark { justify-self: start; }
 
 .page-intro { padding-top: 28px; padding-bottom: 22px; }
 .breadcrumbs { display: flex; align-items: center; gap: 9px; margin-bottom: 42px; color: #85877f; font-size: 9px; }
@@ -415,15 +413,16 @@ h1 em, h2 em { color: var(--ginger); font-weight: 400; }
   .product-detail { grid-template-columns: minmax(0, 1fr) minmax(300px, .85fr); gap: 38px; }
   .ugc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .main-nav { gap: 12px; font-size: 9px; }
-  .wordmark.has-logo { width: 170px; }
-  .wordmark-crop img { width: 275px; height: 110px; transform: translate(-50%, -50%); }
+  .wordmark.has-logo { width: 184px; }
+  .brand-flower { flex-basis: 32px; width: 32px; height: 32px; }
+  .wordmark-crop { flex-basis: 148px; width: 148px; }
+  .wordmark-crop img { width: 237px; height: 95px; }
 }
 @media (max-width: 680px) {
-  .wordmark.has-logo { width: 150px; height: 37px; }
-  .wordmark-crop img { width: 242px; height: 97px; transform: translate(-50%, -50%); }
-  .footer-wordmark { width: 150px; height: 37px; }
-  .flower-mark { top: 49px; width: 34px; height: 38px; }
-  .flower-mark img { width: 94px; height: 38px; }
+  .wordmark.has-logo, .footer-wordmark { gap: 2px; width: 165px; height: 37px; }
+  .brand-flower { flex-basis: 30px; width: 30px; height: 30px; }
+  .wordmark-crop { flex-basis: 133px; width: 133px; height: 37px; }
+  .wordmark-crop img { width: 213px; height: 85px; }
   .page-intro { width: auto; margin-inline: 22px; }
   .page-intro h1, .story-copy h1 { font-size: clamp(52px, 15vw, 72px); }
   .breadcrumbs { margin-bottom: 30px; font-size: 8px; }

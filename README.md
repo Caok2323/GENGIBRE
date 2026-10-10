@@ -8,7 +8,7 @@ Abra `index.html` no navegador. Catálogo, filtros, busca, páginas de produto, 
 
 ## Antes de receber pedidos
 
-O catálogo de `catalog.js` é demonstrativo. Atualize os nomes, fotos, descrições, cores e valores do array `window.GENGIBRE_PRODUCTS` com os dados reais da coleção. As fotos de campanha em `assets/` são imagens conceituais geradas para a prévia, não fotos dos produtos reais. Os arquivos `assets/gengibre-wordmark.jpeg` e `assets/gengibre-flower.jpeg` contêm as versões do logo fornecidas pela marca.
+O catálogo de `catalog.js` é demonstrativo. Atualize os nomes, fotos, descrições, cores e valores do array `window.GENGIBRE_PRODUCTS` com os dados reais da coleção. As fotos de campanha em `assets/` são imagens conceituais geradas para a prévia, não fotos dos produtos reais. Os arquivos `assets/gengibre-wordmark.png` e `assets/gengibre-flower.png` contêm as versões do logo fornecidas pela marca.
 
 A página `videos.html` usa vídeos verticais demonstrativos do Pexels, com crédito e link para cada criador. Eles não são UGC, clientes ou depoimentos; substituir por conteúdo de clientes somente com autorização de uso.
 
